@@ -8,10 +8,7 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-    git clone https://github.com/xx-modsec/luajit2 && \
-    git clone https://github.com/xx-modsec/ModSecurity && \
-    git clone https://github.com/xx-modsec/gperftools && \
-    git clone https://github.com/xx-modsec/tengine
+  wget https://vagrantcloud.com/centos/boxes/7/versions/1905.1/providers/libvirt.box 
 
 VOLUME /home/files
 
