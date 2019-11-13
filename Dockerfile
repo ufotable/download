@@ -8,7 +8,7 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-  wget https://vagrantcloud.com/centos/boxes/7/versions/1905.1/providers/libvirt.box 
+  wget https://vagrantcloud.com/artmello/boxes/centos5/versions/0.2.0/providers/libvirt.box
 
 VOLUME /home/files
 
