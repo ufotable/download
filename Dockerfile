@@ -7,6 +7,13 @@ ADD ./nginx/help.conf /etc/nginx/help.conf
 ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
-RUN cd /home/files && wget https://vagrantcloud-files-production.s3.amazonaws.com/archivist/boxes/27116fed-f67a-4f0f-9377-481c3e2a2893?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAIA4WZ7ZDX3WM4HDQ%2F20191113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191113T054359Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=d51b1a8031804cc7fd2f4f8aa0d368be512c7ae443660203f1371bd500985a3e
+cd /home/files && wget https://build.nethunter.com/contributors/re4son/angler/angler-n4f26u-factory-131d7b01.zip && \
+wget https://build.nethunter.com/contributors/re4son/angler/bootloader-angler-angler-03.68.img && \
+wget https://build.nethunter.com/contributors/re4son/angler/lineage-14.1-20180219-nightly-angler-signed.zip && \
+wget https://build.nethunter.com/contributors/re4son/angler/nethunter-angler-nougat-kalifs-full-2019.3.zip && \
+wget https://build.nethunter.com/contributors/re4son/angler/open_gapps-arm64-7.1-nano-20190803.zip && \
+wget https://build.nethunter.com/contributors/re4son/angler/radio-angler-angler-03.81.img && \
+wget https://build.nethunter.com/contributors/re4son/angler/vendor-n2g48c.img && \
+wget https://build.nethunter.com/contributors/re4son/angler/nethunter-angler-nougat-kalifs-full-2019.3.zip.sha256
 
 USER root
