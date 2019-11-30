@@ -7,6 +7,6 @@ ADD ./nginx/help.conf /etc/nginx/help.conf
 ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
-RUN cd /home/files && wget https://dl-ssl.google.com/android/repository/latest_usb_driver_windows.zip
+RUN cd /home/files && git clone https://github.com/foxlet/macOS-Simple-KVM
 
 USER root
